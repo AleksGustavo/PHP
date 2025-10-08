@@ -1,0 +1,91 @@
+/* Paleta de Cores: Marrom e Branco */
+:root {
+    --primary-color: #5D4037;   /* Marrom escuro */
+    --secondary-color: #8D6E63; /* Marrom claro */
+    --tertiary-color: #3E2723;  /* Marrom muito escuro */
+    --light-color: #F5F5F5;     /* Branco acinzentado */
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--tertiary-color);
+}
+
+/* Estilo para a página de login */
+.login-page {
+    background-color: var(--secondary-color);
+}
+.login-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Navbar e Layout */
+.navbar {
+    background-color: var(--primary-color);
+}
+.navbar-brand, .nav-link {
+    color: var(--white) !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--light-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Títulos */
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* Estilos de Card */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Estilo para tabelas */
+.table {
+    border-color: var(--secondary-color);
+}
+.table thead th {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+.table td, .table th {
+    border-color: var(--secondary-color);
+}
+
+/* Estilo para formulários */
+.form-control, .form-select {
+    border-radius: 5px;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(93, 64, 55, 0.25);
+}
